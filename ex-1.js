@@ -3,7 +3,7 @@
 function forEach(array, operation) {
   // Start coding here
   for (let i = 0; i < array.length; i++) {
-    let newSalary = increase5kSalary(array[i]);
+    let newSalary = operation(array[i]);
     newEmployeeSalaries.push(newSalary);
   }
 }
